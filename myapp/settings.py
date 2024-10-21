@@ -78,12 +78,24 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        "DATABASE_URL":"postgres://default:m1uBtinjc5Sv@ep-calm-night-a4yl97dr-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+        "USER":"default",
+        "HOST":"ep-calm-night-a4yl97dr-pooler.us-east-1.aws.neon.tech",
+        "PASSWORD":"m1uBtinjc5Sv",
+        "DATABASE":"verceldb"
     }
 }
+
 
 
 # Password validation
