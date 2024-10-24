@@ -87,12 +87,12 @@ WSGI_APPLICATION = 'myapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        "DATABASE_URL":"postgres://default:m1uBtinjc5Sv@ep-calm-night-a4yl97dr-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
-        "USER":"default",
-        "HOST":"ep-calm-night-a4yl97dr-pooler.us-east-1.aws.neon.tech",
-        "PASSWORD":"m1uBtinjc5Sv",
-        "DATABASE":"verceldb"
+        'ENGINE': 'django.db.backends.postgresql',
+        "NAME":"railway",
+        "USER":"posgres",
+        "HOST":"postgres.railway.internal",
+        "PASSWORD":"IIjFhntLNvsKjuwPtWDTEBBPSmzFAcpE",
+        "DATABASE":"railway"
     }
 }
 
